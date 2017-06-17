@@ -7,7 +7,7 @@ I am a freelance web desinger/developer. I have coded some themes in Wordpress. 
 <div class="showcase">
 <div class="showcase-left">
 # Themes {#themes}
-I have designed some themes for use in Wordpress, check them out at <a href="https://wordpress.org">worpress.org</a>. If you want to tinker with the source code, here is the link to the github repo: <a href="https://github.com">github.com</a>
+I have designed some themes for use in Wordpress, ~~check them out at <a href="https://wordpress.org">worpress.org</a>~~ Coming soon!
 
 If you want me to design a theme for your website, contact me at <a href="mailto://neutroncode@protonmail.com">neutroncode@protonmail.com</a>
 
@@ -19,7 +19,7 @@ If you want me to design a theme for your website, contact me at <a href="mailto
 <div class="showcase">
 <div class="showcase-left">
 # Scripts {#scripts}
-I have some scripts avaliable here for your perusal. Some are for work, others for entertainment. Check them out at <a href="https://github.com">github.com</a>
+I have some scripts avaliable here for your perusal. Some are for work, others for entertainment. Check them out at <a href="https://github.com/neutroncode">github.com</a>
 </div>
 
 <div class="showcase-right">
