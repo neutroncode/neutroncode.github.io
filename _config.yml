@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   The site for NeutronCode, a place to find themes and scripts.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: neutroncode
+#twitter_username: neutroncode
 github_username: neutroncode
 
 # Build settings
