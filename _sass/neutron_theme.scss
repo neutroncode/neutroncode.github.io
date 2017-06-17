@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+$text-color:            #FFFFFF !default;
+$background-color:      #262D3B !default;
+$brand-color:           #FF8000 !default;
+$darker-brand-color:    #CF6700 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+$spacing-unit:     20px !default;
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+/* Import fonts and syntax highlighting*/
+@import
+    "https://fonts.googleapis.com/css?family=Roboto:300",
+    "neutron_theme/syntax-highlighting",
+    "neutron_theme/homepage"
+;
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background: #262D3B;/* url('img/headerbg.jpg') fixed;
+    background-position: center center;
+    background-size: cover;*/
+}
+
+h1,
+h2,
+h3{
+    color: $text-color;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p {
+    color: $text-color;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 10px 20px 0 20px;
+    margin: 0;
+}
+
+a{
+    color: #FF8000;
+    text-decoration: none;
+    transition: 0.2s ease-in;
+}
+
+a:hover{
+    color: $text-color;
+    background: #FF8000;
+    outline: none;
+}
+
+a:active,
+a:focus{
+    color: $text-color;
+    background: #CF6700;
+    transition: none;
+}
+
+ul,
+ol{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: $text-color;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    margin: 10px auto 10px auto;
+    display: block;
+    position: relative;
+    box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.55);
+}
+
+header {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 50px 0 50px 0;
+    background: url('/assets/img/headerbg.jpg') fixed;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.3);
+}
+
+#inner-header {
+    display: block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    background: #ff0000;
+    max-width: 1500px;
+}
+
+#site-title {
+    display: block;
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#site-title h1{
+    display: inline-block;
+    position: relative;
+    font-size: 32px;
+    color: $text-color;
+    padding: 20px;
+    margin: 0;
+}
+
+#site-title a img{
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    right: 30px;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+#site-title a{
+    color: $text-color;
+    text-decoration: none;
+}
+
+#site-title a:hover,
+#site-title a:active,
+#site-title a:focus{
+    color: $text-color;
+    background: transparent;
+}
+
+#inner-header nav{
+    max-width: 1160px;
+    position: relative;
+    float: right;
+    margin: 24px 20px 24px 0;
+}
+
+#inner-header nav ul{
+    list-style: none;
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+#inner-header nav ul li{
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+#inner-header nav ul li a{
+    color: $text-color;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 28px 20px 28px 0;
+    transition: 0.2s ease-in;
+}
+
+#inner-header nav ul li a:hover{
+    color: #FF8000;
+    background: transparent;
+    outline: none;
+}
+
+#inner-header nav ul li a:active,
+#inner-header nav ul li a:focus{
+    color: #CF6700;
+    background: transparent;
+    outline: none;
+    transition: none;
+}
+
+#nav-button{display:none}
+
+@media screen and (max-width: 630px){
+    #site-title{
+        width: 100%;
+    }
+    #site-title a img{
+        top: 15px;
+        left: 220px;
+    }
+    #inner-header nav{
+        width: 100%;
+        margin: auto;
+    }
+    #inner-header nav ul li{
+        display: block;
+        padding: 5px;
+    }
+    #inner-header nav ul li a{
+        padding: 0;
+    }
+    #nav{
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+    #nav-button{
+        display: block;
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        font-size: 30px;
+        outline: none;
+    }
+    #nav-button i:hover,
+    #nav-button i:active,
+    #nav-button i:focus{
+        color: #999;
+        transition: 0.3s ease-in;
+        outline: none;
+    }
+}
+
+@media screen and (min-width: 631px) {
+    #inner-header nav{
+        height: 100%;
+    }
+}
+
+main {
+    position: relative;
+    display: block;
+    min-height: 600px;
+    width: 100%;
+    height: 100%;
+    float: left;
+    z-index: 10;
+}
+
+.inner-main{
+    max-width: 1500px;
+    display: block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    padding-top: 15px;
+}
+
+.post-header{
+    text-align: center;
+    background: url('/assets/img/post.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    float: left;
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+ul.post{
+    padding: 0;
+    margin: 0;
+}
+
+.post li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.post-meta{
+    padding-left: 20px;
+}
+
+.rss-subscribe{
+    padding-top: 40px;
+}
+
+footer{
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    background: #1B2029;
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.45);
+}
+
+/**
+ * Site footer
+ */
+.footer-heading {
+  margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.footer-col-wrapper {
+  color: $grey-color;
+  margin-left: 20px;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: 40px;
+  padding-left: 0;
+}
+
+.footer-col-1 {
+  width: 20%;
+  padding-right: 5px;
+  display: block;
+  position: relative;
+  word-break: break-all;
+}
+
+.footer-col-2 {
+  width: 20%;
+  display: block;
+  position: relative;
+}
+
+.footer-col-3 {
+  width: 30%;
+  float: right;
+  text-align: right;
+  display: block;
+  position: relative;
+}
+
+#footer-inner{
+    padding-top: 20px;
+    margin: 0 auto 0 auto;
+    max-width: 1500px;
+}
+
+/* Transitions and Animations */
+@keyframes expand {
+    0% { height: 0 }
+    100% { height: 150px }
+}
+
+@keyframes fall {
+    0% { height: 150px }
+    100% { height: 0 }
+}
+
+.expand {
+    animation: expand 0.3s;
+}
+
+.fall {
+    animation: fall 0.3s;
+}
+
+.fullwidth {
+    height: 100%;
+}

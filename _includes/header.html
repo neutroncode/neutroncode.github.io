@@ -1,0 +1,25 @@
+<header class="site-header" role="banner">
+    {% assign default_paths = site.pages | map: "path" %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
+    <div id="inner-header">
+    <div id="site-title">
+    <a href="{{ "/" | relative_url }}">
+        <h1>{{ site.title | escape }}</h1>
+        <img src="{{ "/assets/img/logo.png" | relative_url }}" alt="Logo"/>
+    </a>
+
+    <a href="javascript:void(0);" id="nav-button" onclick="shownav()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </a>
+    </div><!--#site-title-->
+
+    <nav id="nav" class="box">
+        <ul>
+            <li><a href="{{ "/" | relative_url }}">Home</a></li>
+            <li><a href="{{ "/" | relative_url }}#themes">Themes</a></li>
+            <li><a href="{{ "/" | relative_url }}#scripts">Scripts</a></li>
+            <li><a href="{{ "/post.html" | relative_url }}">Posts</a></li>
+        </ul>
+    </nav>
+    </div><!--#inner-header-->
+</header>

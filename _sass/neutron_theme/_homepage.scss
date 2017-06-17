@@ -1,0 +1,42 @@
+.showcase{
+    width: 100%;
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.showcase h1{
+    margin: 20px 0 0 0;
+}
+
+.showcase-left {
+    width: 50%;
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.showcase-right {
+    width: 50%;
+    display: block;
+    position: relative;
+    float: right;
+    padding-top: 20px;
+}
+
+.showcase-right img{
+    width: 50%;
+    height: 50%;
+    display: block;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+@media screen and (max-width: 700px){
+    .showcase-left{
+        width: 100%;
+    }
+    .showcase-right{
+        display: none;
+    }
+}
