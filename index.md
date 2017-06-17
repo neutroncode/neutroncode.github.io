@@ -19,7 +19,7 @@ If you want me to design a theme for your website, contact me at <a href="mailto
 <div class="showcase">
 <div class="showcase-left">
 # Scripts {#scripts}
-I have some scripts avaliable here for your perusal. Some are for work, others for entertainment. Check them out at <a href="https://github.com/neutroncode">github.com</a>
+I have some scripts avaliable here for your perusal. Some are for work, others for entertainment. Check them out at <a href="https://github.com/neutroncode/scripts">github.com</a>
 </div>
 
 <div class="showcase-right">
