@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "startd.service"
+date:   2017-06-15 19:40:24 +1200
+categories: its a start
+---
+
+Hello to anyone reading this. I am NeutronCode, an regular old coder. These are my posts. Right now there isn't much to post about, but be sure to visit again.

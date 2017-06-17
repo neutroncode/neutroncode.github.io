@@ -3,8 +3,6 @@ layout: home
 ---
 Hey, it's NeutronCode. I am a freelance web desinger/developer. I have coded some themes in Wordpress. In my spare time I do include coding, electronics and longboarding. If you want me to design a theme for your website, contact me at <a href="mailto://neutroncode@protonmail.com">neutroncode@protonmail.com</a>
 
-For references, contact <a href="mailto://garethb@cornerstone.ac.nz">Gareth Bell</a> at <a href="mailto://garethb@cornerstone.ac.nz">garethb@cornerstone.ac.nz</a>
-
 <div class="showcase">
 <div class="showcase-left">
 # Themes {#themes}
